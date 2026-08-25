@@ -409,7 +409,7 @@ html_out = f'''<meta charset="utf-8">
       y diseño industrial. Tampoco ofertas ya registradas antes del 20 de agosto.</p>
     <p><b>¿Quieres filtrar y marcar postulaciones?</b> El visor completo, con las 35 ofertas, filtros por
       categoría y modalidad, análisis de perfil y seguimiento de postulaciones, está en
-      <a href="viewer/">/viewer/</a>.</p>
+      <a href="https://langab.github.io/visor_trabajo_colo/viewer/">langab.github.io/visor_trabajo_colo/viewer/</a>.</p>
     <p>Generado el 25 de agosto de 2026 para Andrea Ortega · buscador de trabajo de Benjamín Lang</p>
   </footer>
 </div>
