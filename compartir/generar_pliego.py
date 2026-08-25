@@ -213,7 +213,7 @@ html_out = f'''<meta charset="utf-8">
   .tintas i:nth-child(1) {{ background:#00A3D9; }}
   .tintas i:nth-child(2) {{ background:#E5007D; }}
   .tintas i:nth-child(3) {{ background:#FFD500; }}
-  .tintas i:nth-child(4) {{ background:#1B1A17; box-shadow:inset 0 0 0 1px var(--regla); }}
+  .tintas i:nth-child(4) {{ background:var(--tinta); box-shadow:inset 0 0 0 1px var(--regla); }}
   .barra span {{ font-family:var(--dato); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--tinta-2); }}
 
   h1 {{
