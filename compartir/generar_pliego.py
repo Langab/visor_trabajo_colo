@@ -7,16 +7,25 @@ DATA = os.path.join(BASE, "data", "jobs.json")
 OUT  = os.path.join(BASE, "index.html")
 OUT2 = os.path.join(BASE, "compartir", "pliego.html")
 
-PASADA   = "2026-08-25"
-ANTERIOR = "2026-08-20"
-# Ofertas confirmadas hoy como activas vía la API pública de Get on Board
-VERIFICADAS_HOY = {"Healthatom", "Penji", "Hadley Designs", "Envíame", "Commerce Theory"}
+_D = json.load(open(DATA, encoding="utf-8"))
+_HIST = _D.get("history") or []
+PASADA   = _HIST[-1]["date"] if _HIST else max(j["first_seen"] for j in _D["jobs"])
+ANTERIOR = _HIST[-2]["date"] if len(_HIST) > 1 else None
+# Empresas cuya oferta se confirmó activa en esta pasada (API pública de Get on Board)
+VERIFICADAS_HOY = {"Healthatom", "Penji", "Hadley Designs", "Envíame", "Commerce Theory", "OOH Publicidad"}
 
 MESES = ["", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 def fecha_corta(iso):
     if not iso: return ""
     y, m, d = (int(x) for x in iso.split("-"))
     return f"{d} {MESES[m]}"
+
+MESES_L = ["", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+           "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+def fecha_larga(iso):
+    if not iso: return ""
+    y, m, d = (int(x) for x in iso.split("-"))
+    return f"{d} de {MESES_L[m]} de {y}"
 
 def dias_hasta(iso):
     if not iso: return None
@@ -40,10 +49,10 @@ def densitometro(pct, fit):
     return (f'<span class="dens fit-{fit}" role="img" aria-label="calce {pct} por ciento">{celdas}</span>'
             f'<span class="dens-num">{pct}<small>%</small></span>')
 
-d = json.load(open(DATA, encoding="utf-8"))
+d = _D
 jobs = d["jobs"]
 nuevas   = [j for j in jobs if j.get("first_seen") == PASADA]
-previas  = [j for j in jobs if j.get("first_seen") == ANTERIOR]
+previas  = [j for j in jobs if j.get("first_seen", "") < PASADA]
 nuevas.sort(key=lambda j: (-(j.get("match_pct") or 0)))
 previas.sort(key=lambda j: (-(j.get("match_pct") or 0), j["company"]))
 
@@ -52,17 +61,18 @@ grupos = {"high": [], "medium": [], "low": []}
 for j in nuevas: grupos[j["fit"]].append(j)
 
 # ---- prioridad de la semana (orden de postulación) ----
-PRIORIDAD = [
-    ("Diseñador/a de Marca Propia Regional (packaging)",
-     "Es tu cargo escrito por otra persona: packaging, artes finales y proveedores en China. Y la fecha de contratación es el 31 de agosto."),
-    ("Diseñador/a (packaging, producto y fotografía)",
-     "Se publicó hoy: llegar el primer día pesa. Junta packaging con sesiones de fotos, que es tu combo raro."),
-    ("Diseñador/a Gráfico Jr Visual Merchandising — Paris",
-     "POP, imprentas y control de calidad en tienda. El calce técnico es total; el «Jr» se negocia después."),
-    ("Productor Gráfico (Diseñador de Producción)",
-     "Agencia global y un cargo donde la preprensa es la habilidad principal, no un extra."),
-]
-por_titulo = {j["title"]: j for j in nuevas}
+# Razones editoriales por pasada: {url: razón}. Si falta una, se usa la 1ª frase de la nota.
+RAZONES = {}
+_rz = os.path.join(BASE, "compartir", "prioridades.json")
+if os.path.exists(_rz):
+    RAZONES = json.load(open(_rz, encoding="utf-8"))
+por_url = {j["url"]: j for j in jobs}
+_orden = [u for u in RAZONES if u in por_url]
+if not _orden:
+    _rank = {"high": 0, "medium": 1, "low": 2}
+    _orden = [j["url"] for j in sorted(
+        nuevas, key=lambda j: (_rank[j["fit"]], -(j.get("match_pct") or 0)))][:4]
+PRIORIDAD = [(u, RAZONES.get(u) or (por_url[u]["notes"].split(". ")[0] + ".")) for u in _orden][:4]
 
 # ---- lectura de mercado (brechas contadas sobre las 13 nuevas) ----
 def cuenta(palabras):
@@ -73,7 +83,7 @@ def cuenta(palabras):
     return n
 MERCADO = [
     ("Motion y video", cuenta(["motion", "video", "capcut", "premiere", "after effects", "animad", "dron", "cámara"]),
-     "Reels, animación de piezas y edición para redes. Pasó a ser el requisito más repetido de la pasada."),
+     "Reels, animación de piezas y edición para redes: piezas que se mueven, no solo estáticas."),
     ("IA generativa", cuenta(["ia ", "ia)", "inteligencia artificial", "midjourney", "firefly", "runway", "claude", "gemini"]),
      "Firefly y Midjourney aparecen por nombre. Como ya dominas Adobe, Firefly es la puerta de entrada más corta."),
     ("Inglés de trabajo", cuenta(["inglés"]),
@@ -81,6 +91,8 @@ MERCADO = [
     ("HTML y CMS", cuenta(["html", "contentful"]),
      "Email marketing y gestores de contenido. Aparece solo en las de canal digital de retail."),
 ]
+MERCADO = [m for m in MERCADO if m[1]]
+MERCADO.sort(key=lambda m: -m[1])
 MAXG = max(m[1] for m in MERCADO) or 1
 
 # ---------------- HTML ----------------
@@ -135,11 +147,11 @@ prioridad_html = "".join(
     f'''<li>
         <span class="prio-n">{i}</span>
         <div>
-          <a href="{e(por_titulo[t]["url"])}" target="_blank" rel="noopener">{e(por_titulo[t]["title"])}</a>
-          <span class="prio-emp">{e(por_titulo[t]["company"])}</span>
+          <a href="{e(por_url[t]["url"])}" target="_blank" rel="noopener">{e(por_url[t]["title"])}</a>
+          <span class="prio-emp">{e(por_url[t]["company"])}</span>
           <p>{e(razon)}</p>
         </div>
-      </li>''' for i, (t, razon) in enumerate(PRIORIDAD, 1) if t in por_titulo)
+      </li>''' for i, (t, razon) in enumerate(PRIORIDAD, 1))
 
 mercado_html = "".join(
     f'''<li>
@@ -153,6 +165,7 @@ previas_html = "".join(
       <td><a href="{e(j["url"])}" target="_blank" rel="noopener">{e(j["title"])}</a></td>
       <td>{e(j["company"])}</td>
       <td class="mono">{e(j["source"])}</td>
+      <td class="mono">{fecha_corta(j["first_seen"])}</td>
       <td class="mono num">{(str(j["match_pct"]) + "%") if j.get("match_pct") else "—"}</td>
       <td>{'<span class="viva">Activa hoy</span>' if j["company"].split(" (")[0] in VERIFICADAS_HOY else '<span class="sinver">Sin verificar</span>'}</td>
     </tr>''' for j in previas)
@@ -164,6 +177,7 @@ TOKENS_OSCURO = """
 """
 
 altas = len(grupos["high"]); con_renta = sum(1 for j in nuevas if j.get("salary"))
+n_verificadas = sum(1 for j in previas if j["company"].split(" (")[0] in VERIFICADAS_HOY)
 
 html_out = f'''<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -350,12 +364,12 @@ html_out = f'''<meta charset="utf-8">
   <header>
     <div class="barra">
       <span class="tintas"><i></i><i></i><i></i><i></i></span>
-      <span>Pasada 25.08.2026 · Santiago · Diseño</span>
+      <span>Pasada {PASADA[8:]}.{PASADA[5:7]}.{PASADA[:4]} · Santiago · Diseño</span>
     </div>
     <h1>Pliego de ofertas</h1>
     <p class="lede">Barrido de LinkedIn, Get on Board y portales chilenos hecho hoy, filtrado contra tu perfil:
       branding, packaging, producción gráfica, dirección de arte y RRSS.
-      <b>{len(nuevas)} ofertas nuevas</b> desde la última pasada del 20 de agosto, con lo que pide cada una,
+      <b>{len(nuevas)} ofertas nuevas</b> desde la pasada del {fecha_larga(ANTERIOR) if ANTERIOR else "inicio"}, con lo que pide cada una,
       lo que te falta y en qué orden conviene postular.</p>
     <dl class="stats">
       <div><dt>Nuevas hoy</dt><dd>{len(nuevas)}</dd></div>
@@ -368,7 +382,7 @@ html_out = f'''<meta charset="utf-8">
   <section>
     <p class="eyebrow">Orden de postulación</p>
     <h2>Esta semana, en este orden</h2>
-    <p class="sub">Priorizadas por calce real y por reloj: dos tienen fecha de contratación a la vista y una se publicó hoy.</p>
+    <p class="sub">Priorizadas por calce real y por reloj: primero las que cierran pronto o se acaban de publicar.</p>
     <ol class="prio">{prioridad_html}</ol>
   </section>
 
@@ -383,19 +397,18 @@ html_out = f'''<meta charset="utf-8">
   <section>
     <p class="eyebrow">Lectura de mercado</p>
     <h2>Lo que pidieron las ofertas de esta pasada</h2>
-    <p class="sub">Contado sobre las {len(nuevas)} descripciones completas. El orden cambió respecto de la pasada anterior:
-      hoy el video pesa más que la IA.</p>
+    <p class="sub">Contado sobre las {len(nuevas)} descripciones completas de esta pasada, de más a menos pedido.</p>
     <ul class="mercado">{mercado_html}</ul>
   </section>
 
   <section>
     <p class="eyebrow">Pasada anterior</p>
-    <h2>Las {len(previas)} del 20 de agosto</h2>
-    <p class="aviso">Estas venían de la pasada anterior y no se volvieron a abrir una por una hoy. Las cinco de Get on Board
-      sí se confirmaron activas; el resto puede haberse cerrado, así que revisa el enlace antes de preparar carta.</p>
+    <h2>Las {len(previas)} de pasadas anteriores</h2>
+    <p class="aviso">Estas vienen de pasadas anteriores y no se volvieron a abrir una por una hoy. Las {n_verificadas} de
+      Get on Board sí se confirmaron activas; el resto puede haberse cerrado, así que revisa el enlace antes de preparar carta.</p>
     <div class="tabla-wrap">
       <table>
-        <thead><tr><th>Cargo</th><th>Empresa</th><th>Portal</th><th>Calce</th><th>Estado</th></tr></thead>
+        <thead><tr><th>Cargo</th><th>Empresa</th><th>Portal</th><th>Vista</th><th>Calce</th><th>Estado</th></tr></thead>
         <tbody>{previas_html}</tbody>
       </table>
     </div>
@@ -406,11 +419,11 @@ html_out = f'''<meta charset="utf-8">
       la API pública de Get on Board en Diseño/UX, Publicidad y Marketing digital, y Chiletrabajos.
       Cada oferta nueva se abrió completa para leer requisitos, renta y plazos: nada de esto viene de un resumen automático.</p>
     <p><b>Qué no está.</b> Prácticas profesionales, avisos fuera de la Región Metropolitana, UX/UI de producto
-      y diseño industrial. Tampoco ofertas ya registradas antes del 20 de agosto.</p>
-    <p><b>¿Quieres filtrar y marcar postulaciones?</b> El visor completo, con las 35 ofertas, filtros por
+      y diseño industrial. Tampoco ofertas ya registradas en pasadas anteriores.</p>
+    <p><b>¿Quieres filtrar y marcar postulaciones?</b> El visor completo, con las {len(jobs)} ofertas, filtros por
       categoría y modalidad, análisis de perfil y seguimiento de postulaciones, está en
       <a href="https://langab.github.io/visor_trabajo_colo/viewer/">langab.github.io/visor_trabajo_colo/viewer/</a>.</p>
-    <p>Generado el 25 de agosto de 2026 para Andrea Ortega · buscador de trabajo de Benjamín Lang</p>
+    <p>Generado el {fecha_larga(PASADA)} para Andrea Ortega · buscador de trabajo de Benjamín Lang</p>
   </footer>
 </div>
 '''
