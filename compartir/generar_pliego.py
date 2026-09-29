@@ -421,7 +421,7 @@ html_out = f'''<meta charset="utf-8">
   </section>
 
   <footer>
-    <p><b>Cómo se armó.</b> Búsquedas en LinkedIn (Santiago y remoto Chile, avisos publicados desde la pasada anterior)
+    <p><b>Cómo se armó.</b> Búsquedas en LinkedIn (Santiago y remoto Chile, avisos publicados desde la pasada anterior), Indeed
       y la API pública de Get on Board en Diseño/UX, Publicidad y Marketing digital.
       Cada oferta nueva se abrió completa para leer requisitos, renta y plazos: nada de esto viene de un resumen automático.</p>
     <p><b>Qué no está.</b> Prácticas profesionales, avisos fuera de la Región Metropolitana, UX/UI de producto,

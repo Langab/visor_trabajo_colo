@@ -2235,6 +2235,56 @@
       ],
       "last_check": "2026-09-29",
       "open": true
+    },
+    {
+      "id": "https://cl.indeed.com/viewjob?jk=17ff6fe55ae4e8dd",
+      "title": "Diseñador/a Gráfico/a",
+      "company": "PRXMA",
+      "url": "https://cl.indeed.com/viewjob?jk=17ff6fe55ae4e8dd",
+      "location": "Vitacura, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "",
+      "fit": "high",
+      "status": "nueva",
+      "salary": "$900.000 a $1.200.000 mensuales",
+      "notes": "PRXMA diseña y fabrica merchandising, packaging y material para ferias y eventos: el rubro donde calzan tu merchandising de Inhóspita y tu packaging de Imanix. El cargo es la gráfica de la propia marca: RRSS, campañas digitales, web, presentaciones, brochures y archivos finales para impresión, con Illustrator, Photoshop e InDesign avanzados. Piden solo 2 años de experiencia y publica renta.",
+      "category": "branding",
+      "source": "Indeed",
+      "modality": "presencial",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 82,
+      "gaps": [
+        "Web y campañas digitales como parte del día a día (sin HTML)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://cl.indeed.com/viewjob?jk=062c99c2bf6f82d5",
+      "title": "ITO Gráfico (imagen de salas de venta, retail)",
+      "company": "Gruponexo",
+      "url": "https://cl.indeed.com/viewjob?jk=062c99c2bf6f82d5",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "$1.000.000 a $1.200.000 mensuales",
+      "notes": "Diseño e implementación de la imagen de salas de venta para aperturas y remodelaciones de retail, respetando el brandbook de cada marca y coordinando con proveedores. Tu material POP y la coordinación de producción suman, pero el cargo es de terreno: levantamientos en locales, gestión de proyectos, liderazgo e indicadores. Contrato indefinido con renta publicada. La postulación pregunta renta esperada y comuna.",
+      "category": "retail-pop",
+      "source": "Indeed",
+      "modality": "presencial",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 62,
+      "gaps": [
+        "Experiencia en punto de venta y retail (deseable 3 años)",
+        "Liderazgo y gestión de proyectos en terreno",
+        "Licencia de conducir (deseable)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
     }
   ],
   "history": [
@@ -2258,9 +2308,9 @@
     },
     {
       "date": "2026-09-29",
-      "new": 47,
-      "new_high": 4,
-      "cumulative": 91
+      "new": 49,
+      "new_high": 5,
+      "cumulative": 93
     }
   ]
 }
