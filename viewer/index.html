@@ -213,7 +213,7 @@
         <span class="filtro-t">Modalidad</span><span class="chipbar" id="mod-chips"></span>
         <select id="source"><option value="all">Todos los portales</option></select>
         <label class="check"><input type="checkbox" id="salaryOnly"> Solo con renta</label>
-        <label class="check"><input type="checkbox" id="hideClosed"> Ocultar cerradas</label>
+        <label class="check"><input type="checkbox" id="hideClosed" checked> Ocultar cerradas</label>
       </div>
     </div>
 
@@ -342,7 +342,7 @@ const RECOS = [
 ];
 
 let DATA = { jobs: [], updated: null, history: [] };
-let state = { q:"", fit:"all", cat:"all", mod:"all", source:"all", salaryOnly:false, hideClosed:false, estado:"activas", orden:"fecha", view:"ofertas" };
+let state = { q:"", fit:"all", cat:"all", mod:"all", source:"all", salaryOnly:false, hideClosed:true, estado:"activas", orden:"fecha", view:"ofertas" };
 const applied = new Set(JSON.parse(localStorage.getItem("postuladas") || "[]"));
 const responded = new Set(JSON.parse(localStorage.getItem("respondidas") || "[]"));
 const closed = new Set(JSON.parse(localStorage.getItem("cerradas") || "[]"));
@@ -354,6 +354,8 @@ async function load() {
   try {
     const r = await fetch("../data/jobs.json?v=" + Date.now());
     DATA = await r.json();
+    // Avisos que la última pasada verificó cerrados (open === false) cuentan como cerrados
+    DATA.jobs.forEach(j => { if (j.open === false) closed.add(j.id); });
   } catch (e) {
     document.getElementById("list").innerHTML = '<div class="empty">No se pudo cargar data/jobs.json</div>';
     return;
@@ -458,7 +460,7 @@ function render() {
   else if (state.orden === "match") jobs.sort((a, b) => matchDe(b) - matchDe(a));
   else jobs.sort((a, b) => a.company.localeCompare(b.company));
 
-  const act = DATA.jobs.filter(j => estadoDe(j) !== "descartada");
+  const act = DATA.jobs.filter(j => estadoDe(j) !== "descartada" && !closed.has(j.id));
   document.getElementById("s-total").textContent = act.length;
   document.getElementById("s-nuevas").textContent = act.filter(esNuevaFn).length;
   document.getElementById("s-high").textContent = act.filter(j => j.fit === "high").length;

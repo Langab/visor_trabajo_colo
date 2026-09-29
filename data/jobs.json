@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-31T02:00:00.000000+00:00",
+  "updated": "2026-09-29T20:00:00.000000+00:00",
   "jobs": [
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-gr%C3%A1fico-at-kinegun-4452843281",
@@ -21,7 +21,9 @@
       "match_pct": 88,
       "gaps": [
         "IA generativa aplicada al diseño (piden buen manejo)"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-gr%C3%A1fico-at-badamax-4456755314",
@@ -43,7 +45,9 @@
       "match_pct": 85,
       "gaps": [
         "IA generativa aplicada al diseño (Firefly, Midjourney, Runway, Ideogram)"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-gr%C3%A1fico-lacoste-at-grupo-axo%C2%AE-4449595239",
@@ -66,7 +70,9 @@
       "gaps": [
         "Motion graphics / After Effects (deseable)",
         "IA generativa aplicada al diseño (Firefly, Midjourney, deseable)"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.trabajo.org/oferta-5019-a24a12c051658e1665d2e94ed6e81053",
@@ -89,7 +95,9 @@
       "gaps": [
         "Motion graphics / After Effects (piden edición de video)",
         "IA generativa aplicada al diseño"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.dive.cl/trabaja-con-nosotros/director-de-arte",
@@ -112,7 +120,9 @@
       "gaps": [
         "Motion graphics / After Effects (gráficas animadas y video)",
         "IA generativa aplicada al diseño (generación de imágenes)"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/director-a-de-arte-at-mccann-4445161775",
@@ -134,7 +144,9 @@
       "match_pct": 62,
       "gaps": [
         "Experiencia en agencia de publicidad (compite con 200+ postulantes)"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/jr-graphic-designer-at-vida-shoes-international-4450339822",
@@ -145,7 +157,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-08-13",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Retail internacional de calzado. El cargo es junior (ella ya tiene 4+ años, quedaría sobre el perfil y la renta probablemente baja), pero es puerta de entrada a empresa internacional. Revisar descripción completa antes de postular.",
       "category": "retail-pop",
@@ -154,7 +166,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-a-gr%C3%A1fico-contenidos-digitales-at-empresa-confidencial-4442867659",
@@ -165,7 +179,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-07-30",
       "fit": "high",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Gráfica + contenidos digitales es su día a día (Imanix, Masa Madre, Inhóspita). Empresa confidencial: revisar la descripción completa en LinkedIn para dimensionar el cargo.",
       "category": "digital-rrss",
@@ -174,7 +188,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-grafico-at-c-m-chile-4435884871",
@@ -185,7 +201,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-07-20",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Publicada hace ~1 mes. Revisar vigencia y descripción completa en LinkedIn.",
       "category": "digital-rrss",
@@ -194,7 +210,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-a-gr%C3%A1fico-at-club-de-perros-y-gatos-4429596332",
@@ -205,7 +223,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-06-20",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Marca de mascotas (rubro cercano a Imanix por el tono lúdico). Publicada hace ~2 meses: verificar si sigue abierta antes de invertir tiempo.",
       "category": "digital-rrss",
@@ -214,7 +232,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-a-gr%C3%A1fico-a-multimedia-at-grupo-mbo-4447579755",
@@ -225,7 +245,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-08-06",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Publican el cargo de forma recurrente (dos avisos activos), señal de necesidad real. 'Multimedia' sugiere que pedirán video/motion: probable brecha, revisar descripción.",
       "category": "motion",
@@ -234,7 +254,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/dise%C3%B1ador-gr%C3%A1fico-junior-at-equipos-de-riego-4441654402",
@@ -245,7 +267,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-07-20",
       "fit": "low",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Junior y en Talagante (lejos de Santiago centro). Sobre-calificada para el cargo; solo como plan C.",
       "category": "digital-rrss",
@@ -254,7 +276,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/senior-graphic-designer-whs-inc",
@@ -265,7 +289,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-07-20",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Cargo senior en inglés: probablemente pide inglés fluido (ella tiene B1). Buscar el aviso exacto en LinkedIn ('Senior Graphic Designer WHS Inc.') para evaluar.",
       "category": "digital-rrss",
@@ -274,7 +298,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": null,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/director-de-arte-jr-at-vml-enterprise-solutions-4414999120",
@@ -285,7 +311,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-05-20",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Agencia global, cargo junior de dirección de arte: buena vía de entrada al mundo agencia. Piden 1-2 años y manejo de edición de video. Publicada hace 3 meses: alta probabilidad de estar cerrada, verificar.",
       "category": "direccion-arte",
@@ -294,7 +320,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/director-a-de-arte-ia-e-innovaci%C3%B3n-creativa-at-empresa-confidencial-4454566820",
@@ -305,7 +333,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-08-15",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Reciente (5 días). El foco en IA es la brecha principal de Andrea, pero también la tendencia dominante del mercado: si está estudiando IA generativa, esta oferta es el objetivo natural.",
       "category": "direccion-arte",
@@ -314,7 +342,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.linkedin.com/jobs/view/director-a-de-arte-quality-control-senior-at-pictor-4427071810",
@@ -325,7 +355,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "2026-06-20",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "El componente de control de calidad calza con su experiencia en preprensa, supervisión de archivos e imprentas (Monarca, Imanix). Es cargo senior, pero su perfil de producción gráfica es raro de encontrar: vale la pena postular argumentando esa fortaleza.",
       "category": "direccion-arte",
@@ -334,7 +364,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/empleos/diseno-ux/ai-creative-designer-graphic-motion-healthatom-santiago-bogota",
@@ -345,7 +377,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "desconocida",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Empresa de software de salud (Dentalink). Piden motion graphics, video e IA generativa: las dos brechas de Andrea juntas. Solo si quiere apostar a aprender sobre la marcha.",
       "category": "motion",
@@ -354,7 +386,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/jobs/design-ux/art-director-penji-remote-2242",
@@ -365,7 +399,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "desconocida",
       "fit": "low",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "US$800-900/mes",
       "notes": "Remoto para agencia estadounidense: requiere inglés fluido (tiene B1) y la renta es baja para el título del cargo. Solo como ingreso puente.",
       "category": "direccion-arte",
@@ -374,7 +408,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/jobs/design-ux/junior-product-illustrator-hadley-designs-remote",
@@ -385,7 +421,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "desconocida",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Ilustración de producto con Illustrator, estilo infantil: la ilustración es una de sus especialidades y el estilo calza con su experiencia en juguetes (Imanix). Es junior y remoto para empresa gringa: revisar nivel de inglés requerido.",
       "category": "ilustracion",
@@ -394,7 +430,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/jobs/design-ux/disenador-a-de-comunicaciones-internas-pre-post-natal-enviame-remote",
@@ -405,7 +443,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "desconocida",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "US$700/mes",
       "notes": "Contenido gráfico y audiovisual para comunicación interna. Es un reemplazo temporal (pre/postnatal) y la renta es baja: útil solo como ingreso puente mientras busca algo estable.",
       "category": "digital-rrss",
@@ -414,7 +452,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/empleos/diseno-ux/figma-designer-commerce-theory-remote-f840",
@@ -425,7 +465,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "desconocida",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Diseño de emails, avisos Meta y conceptos de marca en Figma. Calce inesperado: ella domina Figma Y Klaviyo (email marketing), combinación que piden pocos. Requiere inglés: revisar nivel exigido.",
       "category": "digital-rrss",
@@ -434,7 +474,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://cl.talent.com/view?id=51b1a8567e45",
@@ -445,7 +487,7 @@
       "first_seen": "2026-08-20",
       "date_posted": "desconocida",
       "fit": "medium",
-      "status": "nueva",
+      "status": "evaluada",
       "salary": "",
       "notes": "Ficha en Talent.com vía consultora. Revisar detalle y vigencia antes de postular.",
       "category": "direccion-arte",
@@ -454,7 +496,9 @@
       "deadline": "",
       "applied_date": "",
       "match_pct": null,
-      "gaps": []
+      "gaps": [],
+      "open": null,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4447590618",
@@ -477,7 +521,9 @@
       "gaps": [
         "IA generativa aplicada al diseño (la piden explícitamente)",
         "Inglés medio oral y escrito para reuniones con proveedores (tienes B1)"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4456962520",
@@ -501,7 +547,9 @@
         "Creación de HTML",
         "Inglés intermedio-avanzado en lectura y redacción",
         "Herramientas de IA (Claude, Gemini) en el proceso creativo"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4448893694",
@@ -523,7 +571,9 @@
       "match_pct": 84,
       "gaps": [
         "Cargo junior: la renta puede quedar bajo tu nivel actual"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4454091611",
@@ -546,7 +596,9 @@
       "gaps": [
         "Experiencia previa en agencia creativa o digital",
         "Experiencia en 'off' / producción de medios masivos"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4456080087",
@@ -570,7 +622,9 @@
         "Edición y adaptación de video (CapCut o similar)",
         "Plataformas de mailing tipo SendGrid",
         "IA aplicada al diseño (deseable)"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4446280953",
@@ -594,7 +648,9 @@
         "Experiencia en moda/textil (excluyente: ilustración aplicada a vestuario)",
         "Manejo de Procreate y tableta gráfica",
         "IA aplicada al diseño"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4454599915",
@@ -618,7 +674,9 @@
         "HTML avanzado para diseño y desarrollo de emails",
         "Contentful (CMS)",
         "Contenidos digitales animados"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4453801215",
@@ -641,7 +699,9 @@
       "gaps": [
         "IA generativa: Midjourney, DALL·E, Runway, Firefly",
         "Motion graphics y reels (Premiere, After Effects)"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4454642257",
@@ -666,7 +726,9 @@
         "Inglés fluido escrito y verbal (tienes B1)",
         "IA integrada al proceso de diseño",
         "Deseable animación y edición de video"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/jobs/content-creator-social-media-ooh-publicidad-santiago-f77f",
@@ -690,7 +752,9 @@
         "Edición de video para redes (CapCut/Premiere)",
         "Manejo de dron y cámara",
         "Aparecer frente a cámara"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4458764113",
@@ -714,7 +778,9 @@
         "Motion graphics nivel avanzado (After Effects, Premiere)",
         "Portafolio de contenido viral corto",
         "Inglés de trabajo"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4455944442",
@@ -738,7 +804,9 @@
         "Meta Ads y Google Ads",
         "Edición de video",
         "Traslado diario a Paine"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4456385432",
@@ -761,7 +829,9 @@
       "gaps": [
         "Inglés C2 (excluyente)",
         "Edición de video de alto volumen"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4460862311",
@@ -785,7 +855,9 @@
         "Técnicas de estampado textil: screen print, bordados, parches",
         "Inglés escrito y técnico para fichas con proveedores",
         "Trabajo en macOS/iMac (menor)"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4459896769",
@@ -809,7 +881,9 @@
         "Adaptación de piezas animadas (After Effects, Premiere)",
         "IA generativa obligatoria (Claude, Gemini, ChatGPT)",
         "Figma en el stack diario"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/jobs/graphic-designer-design-shifu-remote",
@@ -832,7 +906,9 @@
       "gaps": [
         "Experiencia previa en agencia",
         "Renta bajo el mercado local para tu nivel"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/jobs/mid-level-graphic-designer-everything-bagel-remote-0932",
@@ -856,7 +932,9 @@
         "Figma avanzado: sistemas de componentes, tokens, variantes",
         "Motion (Jitter o After Effects)",
         "Inglés escrito y hablado fluido"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.getonbrd.com/jobs/sr-visual-designer-ingles-e-commerce-smith-remote-3a6b",
@@ -880,7 +958,9 @@
         "Diseño de interfaces web responsivas",
         "Sketch y sistemas de diseño",
         "Inglés para presentar a clientes"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4458009881",
@@ -904,7 +984,9 @@
         "Licencia de conducir clase B vigente (requisito)",
         "Cargo junior y mayormente de coordinación, no de diseño",
         "Disponibilidad para actividades en terreno"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4458022016",
@@ -927,7 +1009,9 @@
       "gaps": [
         "Cargo de 0 a 1 año de experiencia",
         "Renta muy por debajo de tu nivel"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4457271047",
@@ -951,7 +1035,9 @@
         "Producción y edición de video para redes (portafolio exigido)",
         "Aparecer frente a cámara y hacer entrevistas",
         "Redacción de artículos con SEO"
-      ]
+      ],
+      "open": true,
+      "last_check": "2026-09-29"
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4456958872",
@@ -975,7 +1061,511 @@
         "IA generativa excluyente, con portafolio de piezas hechas con IA",
         "Video y animación",
         "Postulación pide pretensión de renta y disponibilidad por correo"
-      ]
+      ],
+      "open": false,
+      "last_check": "2026-09-29"
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4468920261",
+      "title": "Diseñador/a (Marketing y Clientes)",
+      "company": "CIC",
+      "url": "https://www.linkedin.com/jobs/view/4468920261",
+      "location": "Maipú, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-22",
+      "fit": "high",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Key visuals de campaña, material POP, catálogos, fichas comerciales, mailings y RRSS, más la producción y postproducción de fotografía de producto: es el cruce exacto de Imanix e Inhóspita. Piden solo 1 año de experiencia y el formato es híbrido Maipú/teletrabajo. La brecha es la IA: quieren que la foto de producto se retoque y ambiente con Magnific, Midjourney o Firefly.",
+      "category": "retail-pop",
+      "source": "LinkedIn",
+      "modality": "hibrido",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 80,
+      "gaps": [
+        "IA generativa para retoque y ambientación de fotos (Magnific, Midjourney, Firefly)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4472003080",
+      "title": "Diseñador/a de Marca y Packaging (retail, productos para el hogar)",
+      "company": "Global Talent (cliente retail nacional)",
+      "url": "https://www.linkedin.com/jobs/view/4472003080",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-25",
+      "fit": "high",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Branding y packaging de punta a punta, desde el concepto hasta los artes finales, para una marca retail de productos para el hogar. Es tu core. El aviso se ha publicado tres veces desde el 5 de septiembre, señal de que no encuentran a nadie: buena ventana para entrar. La última versión pide experiencia con IA generativa (Midjourney, Firefly, Nano Banana y similares) como requisito, y una versión anterior pedía edición de video. Contrato por obra.",
+      "category": "packaging",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 78,
+      "gaps": [
+        "IA generativa aplicada a branding y mockups (requisito)",
+        "Edición de video o motion (en una de las versiones del aviso)",
+        "Contrato por obra, no indefinido"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4459998055",
+      "title": "Encargado/a de Marketing y Diseño",
+      "company": "Empresa privada (vía Validate Talent)",
+      "url": "https://www.linkedin.com/jobs/view/4459998055",
+      "location": "Las Condes, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-29",
+      "fit": "high",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Diseñadora que además lleva el marketing de la marca: piezas para RRSS, mailing, web, catálogos, folletos, pendones y eventos, lineamientos de identidad y coordinación con imprentas y proveedores. Todo eso ya lo hiciste. Lo nuevo es la parte de gestión: presupuesto del área, reportes de campañas y calendario de contenidos. Piden 3 años de experiencia. Publicada hoy.",
+      "category": "branding",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 76,
+      "gaps": [
+        "Gestión de marketing: presupuesto, métricas y reportes",
+        "Video o motion (deseable)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4462042475",
+      "title": "Diseñador/a Digital / Web (ecommerce)",
+      "company": "Falabella Retail",
+      "url": "https://www.linkedin.com/jobs/view/4462042475",
+      "location": "Las Condes, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-23",
+      "fit": "high",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Banners, home, landings, email marketing y fichas de producto para el ecommerce de Falabella. Tu experiencia en ecommerce y mailing (Shopify, Klaviyo) calza directo y no piden HTML ni motion. El ojo: piden 0 a 2 años, así que es un cargo junior y la renta puede quedar bajo tu nivel. La postulación sigue por la plataforma AIRA, con preguntas y pruebas.",
+      "category": "digital-rrss",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 74,
+      "gaps": [
+        "Cargo junior (0-2 años): la renta puede quedar bajo tu nivel"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4464536628",
+      "title": "Jr Art Director",
+      "company": "Publicis Groupe Chile",
+      "url": "https://www.linkedin.com/jobs/view/4464536628",
+      "location": "Las Condes, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-15",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Dirección de arte junior en agencia de red global, en dupla con redactores: conceptos visuales, bocetos y piezas finales de campaña. Piden 1 a 3 años como director de arte y tú tienes casi dos en Imanix. Híbrido (lunes, martes y jueves en oficina). Lo que resta: no tienes trayectoria en agencia y piden inglés intermedio.",
+      "category": "direccion-arte",
+      "source": "LinkedIn",
+      "modality": "hibrido",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 70,
+      "gaps": [
+        "Experiencia en agencia de publicidad",
+        "Inglés intermedio (tienes B1, al límite)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4470580728",
+      "title": "Diseñador Gráfico 3D (retail y POP)",
+      "company": "Grupo Acento (para un partner)",
+      "url": "https://www.linkedin.com/jobs/view/4470580728",
+      "location": "Remoto, Chile",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-27",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "$700.000 a $1.000.000 líquidos + Amipass",
+      "notes": "Material POP, stands, catálogos, cenefas, stoppers, headers y preprensa para retail: tu terreno. Es 100% remoto y publica renta. El problema es el 3D: piden visualizar proyectos con renders y manejo de After Effects y Premiere. El aviso aclara que no buscan perfiles de community manager, sino diseñador de piezas, y eso te favorece.",
+      "category": "retail-pop",
+      "source": "LinkedIn",
+      "modality": "remoto",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 66,
+      "gaps": [
+        "Modelado y render 3D (requisito)",
+        "After Effects y Premiere"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4461180246",
+      "title": "Diseñador/a Gráfico & Contenidos Digitales",
+      "company": "Empresa Confidencial (consultora)",
+      "url": "https://www.linkedin.com/jobs/view/4461180246",
+      "location": "Las Condes, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-08",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Reapareció: es el mismo cargo que registramos el 20 de agosto, que se cerró y volvió a publicarse. Ahora se lee el aviso completo: más community manager que diseño (grilla, redacción, métricas, reportes) y piden 5 años de experiencia general y 3 en cargos similares. El diseño corporativo, los brochures y las piezas impresas sí son tuyos.",
+      "category": "digital-rrss",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 66,
+      "gaps": [
+        "Community management con métricas y reportes (Metricool, Hootsuite)",
+        "Premiere, CapCut y After Effects",
+        "5 años de experiencia general (tienes cerca de 4)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4465651304",
+      "title": "Diseñador/a Gráfico/a (guardián de marca, consultora)",
+      "company": "Global Talent (cliente consultora)",
+      "url": "https://www.linkedin.com/jobs/view/4465651304",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-10",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Diseño corporativo bajo manual de marca: presentaciones, brochures, mailings, web, RRSS y eventos, con rol de guardiana de la identidad. Illustrator, Photoshop e InDesign son excluyentes y los dominas. Piden 5 años de experiencia y buen PowerPoint. Contrato por obra. Se publicó dos veces en septiembre.",
+      "category": "branding",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 66,
+      "gaps": [
+        "5 años de experiencia (tienes cerca de 4)",
+        "PowerPoint avanzado para presentaciones corporativas",
+        "Contrato por obra"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4471725905",
+      "title": "Ilustrador/a Junior — Personaje de marca (freelance)",
+      "company": "ISESA S.A.",
+      "url": "https://www.linkedin.com/jobs/view/4471725905",
+      "location": "Cerrillos, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-29",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Proyecto freelance: desarrollar a Oscar, la mascota de la marca (un San Bernardo), con model sheet, poses, expresiones, guía de estilo y adaptaciones a RRSS, ecommerce, POP y stickers. Es ilustración y branding a la vez. Requisito para postular: portafolio con personajes de autoría propia. Si tienes personajes en Behance, destácalos. Se postula por correo con asunto específico. Sirve como ingreso paralelo.",
+      "category": "ilustracion",
+      "source": "LinkedIn",
+      "modality": "hibrido",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 64,
+      "gaps": [
+        "Portafolio con desarrollo de personajes propios (requisito)",
+        "Proyecto freelance, no contrato"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4467276700",
+      "title": "Diseñador/a Gráfico Textil y Packaging — Paris",
+      "company": "Cencosud",
+      "url": "https://www.linkedin.com/jobs/view/4467276700",
+      "location": "Alto Las Condes, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-14",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Estampados textiles y packaging para las marcas de vestuario femenino de Paris y Jumbo. El packaging y las fichas técnicas son lo tuyo, y tu ilustración sirve para estampados. Lo que pesa en contra: piden 3 años desarrollando estampados y experiencia con marcas de vestuario femenino. Contrato indefinido; la fecha esperada de contratación es el 16 de octubre.",
+      "category": "packaging",
+      "source": "LinkedIn",
+      "modality": "presencial",
+      "deadline": "2026-10-16",
+      "applied_date": "",
+      "match_pct": 60,
+      "gaps": [
+        "3 años en estampados textiles",
+        "Experiencia con marcas de vestuario femenino"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4463120123",
+      "title": "Productor/a Gráfico/a Jr.",
+      "company": "Agencia Match (MatchFY)",
+      "url": "https://www.linkedin.com/jobs/view/4463120123",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-03",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Segunda vacante de producción gráfica en Match, ahora junior: adaptar grillas y key visuals a formatos, preparar archivos y corregir. La semi-senior del 30 de agosto sigue activa, así que puedes postular a ambas. Aquí la animación básica en After Effects es requisito, no deseable.",
+      "category": "packaging",
+      "source": "LinkedIn",
+      "modality": "hibrido",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 60,
+      "gaps": [
+        "After Effects para animaciones básicas (requisito)",
+        "IA (ChatGPT, Gemini, Claude) en el flujo de trabajo"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.getonbrd.com/jobs/creative-account-manager-better-swag-remote",
+      "title": "Merch Designer (remoto, inglés)",
+      "company": "Better Swag",
+      "url": "https://www.getonbrd.com/jobs/creative-account-manager-better-swag-remote",
+      "location": "Remoto",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-03",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "USD 1.400 a 2.000 mensuales",
+      "notes": "Merchandising puro: mockups de productos, conceptos de merch y decks de venta dentro de la marca de cada cliente. Tu experiencia en merchandising (Inhóspita, Imanix) y tu criterio de producción, como cuándo usar una tinta o qué admite el bordado, son justo lo que piden. Remoto y con renta publicada en dólares. Lo que falta: inglés fluido para presentar y soltura con IA para mockups.",
+      "category": "branding",
+      "source": "Get on Board",
+      "modality": "remoto",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 60,
+      "gaps": [
+        "Inglés fluido oral y escrito",
+        "IA generativa para mockups y concepto"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4468280871",
+      "title": "Creador(a) de Contenido",
+      "company": "Glasstech Chile",
+      "url": "https://www.linkedin.com/jobs/view/4468280871",
+      "location": "Renca, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-22",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "≈ $850.000 líquidos",
+      "notes": "Community manager con diseño: RRSS (Instagram, LinkedIn, Pinterest, ArchDaily), fichas comerciales, presentaciones y banco de fotos de obras. Publica renta, pero es más marketing que diseño y el rubro (cerramientos de cristal) es técnico. Plazo fijo, presencial en Renca.",
+      "category": "digital-rrss",
+      "source": "LinkedIn",
+      "modality": "presencial",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 58,
+      "gaps": [
+        "Reportes mensuales de RRSS a directorio",
+        "Video tutoriales internos"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4463205081",
+      "title": "Diseñador/a Digital",
+      "company": "Leytonmedia",
+      "url": "https://www.linkedin.com/jobs/view/4463205081",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-07",
+      "fit": "medium",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Consultora digital con clientes grandes (Bci, Carozzi, Entel, Skechers): mailings, landings y piezas publicitarias. Piden la suite de Adobe incluyendo Premiere como excluyente, y conocimientos de HTML. Horario flexible y presupuesto para capacitación.",
+      "category": "digital-rrss",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 56,
+      "gaps": [
+        "HTML",
+        "Premiere (excluyente)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4466830656",
+      "title": "Creador/a de Contenidos para Redes Sociales",
+      "company": "VaynerMedia LATAM (VaynerX)",
+      "url": "https://www.linkedin.com/jobs/view/4466830656",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-25",
+      "fit": "low",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Agencia de Gary Vaynerchuk buscando creadores que graben y editen su propio contenido a alto volumen, a velocidad de tendencia. Lo tuyo en contenido para Masa Madre suma, pero el cargo es video primero.",
+      "category": "motion",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 42,
+      "gaps": [
+        "Grabación y edición de video propio (After Effects, Final Cut)",
+        "Producción a alto volumen en TikTok e Instagram"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4473507810",
+      "title": "Creadora de Contenido & Social Media (part-time)",
+      "company": "Wabi Studio",
+      "url": "https://www.linkedin.com/jobs/view/4473507810",
+      "location": "Las Condes, Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-29",
+      "fit": "low",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Beauty cowork buscando creadora de contenido part-time: reels, carruseles, calendario y coordinación con influencers. Flexible y con días en casa, pero es rol de creadora de video y no de diseñadora.",
+      "category": "digital-rrss",
+      "source": "LinkedIn",
+      "modality": "hibrido",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 42,
+      "gaps": [
+        "Grabación y edición de reels",
+        "Gestión de influencers"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.getonbrd.com/jobs/digital-designer-marketing-wunderdogs-remote",
+      "title": "Digital Designer (Marketing)",
+      "company": "Wunderdogs",
+      "url": "https://www.getonbrd.com/jobs/digital-designer-marketing-wunderdogs-remote",
+      "location": "Remoto",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-08-31",
+      "fit": "low",
+      "status": "nueva",
+      "salary": "USD 2.500 a 3.750 mensuales",
+      "notes": "La mejor renta de la pasada, remota. El trabajo en sí te calza (RRSS, one-pagers, mailings, presentaciones, material de eventos), pero piden 5 años en diseño de marketing, Figma como herramienta principal a nivel experto e inglés de trabajo diario.",
+      "category": "digital-rrss",
+      "source": "Get on Board",
+      "modality": "remoto",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 45,
+      "gaps": [
+        "Inglés de trabajo",
+        "Figma experto como herramienta principal",
+        "5 años en diseño de marketing"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4470604225",
+      "title": "Email Marketing Designer",
+      "company": "Empresa Confidencial (agencia)",
+      "url": "https://www.linkedin.com/jobs/view/4470604225",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-22",
+      "fit": "low",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Diseño de emails, pero el centro es maquetarlos en HTML y resolver compatibilidad entre Outlook, Gmail y Apple Mail. Tu Klaviyo ayuda solo en parte.",
+      "category": "digital-rrss",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 40,
+      "gaps": [
+        "HTML para email (requisito)",
+        "Compatibilidad entre clientes de correo"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4464122755",
+      "title": "Digital Marketing Designer (AMER)",
+      "company": "Ria Money Transfer",
+      "url": "https://www.linkedin.com/jobs/view/4464122755",
+      "location": "Santiago",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-15",
+      "fit": "low",
+      "status": "nueva",
+      "salary": "",
+      "notes": "Miles de piezas de paid media para varios países. El aviso dice que motion design es requisito central y que las herramientas de IA son esenciales. Rol en inglés. Buena referencia de hacia dónde van los cargos de diseño en empresas globales.",
+      "category": "motion",
+      "source": "LinkedIn",
+      "modality": "no_especificado",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 38,
+      "gaps": [
+        "Motion design (requisito central)",
+        "IA generativa esencial",
+        "Inglés"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
+    },
+    {
+      "id": "https://www.linkedin.com/jobs/view/4463774297",
+      "title": "Social Media & Communications Designer (inglés C2)",
+      "company": "Puulse Marketing",
+      "url": "https://www.linkedin.com/jobs/view/4463774297",
+      "location": "Remoto, Chile",
+      "first_seen": "2026-09-29",
+      "date_posted": "2026-09-05",
+      "fit": "low",
+      "status": "nueva",
+      "salary": "USD 1.000 mensuales",
+      "notes": "Otra vacante de Puulse, ahora de diseño con comunicaciones internas y RRSS de reclutamiento. Remoto, pero exige inglés nativo o casi nativo (C2), incluido corregir textos de otros.",
+      "category": "digital-rrss",
+      "source": "LinkedIn",
+      "modality": "remoto",
+      "deadline": "",
+      "applied_date": "",
+      "match_pct": 35,
+      "gaps": [
+        "Inglés C2 (excluyente)"
+      ],
+      "last_check": "2026-09-29",
+      "open": true
     }
   ],
   "history": [
@@ -996,6 +1586,12 @@
       "new": 9,
       "new_high": 1,
       "cumulative": 44
+    },
+    {
+      "date": "2026-09-29",
+      "new": 20,
+      "new_high": 4,
+      "cumulative": 64
     }
   ]
 }

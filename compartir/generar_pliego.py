@@ -11,8 +11,9 @@ _D = json.load(open(DATA, encoding="utf-8"))
 _HIST = _D.get("history") or []
 PASADA   = _HIST[-1]["date"] if _HIST else max(j["first_seen"] for j in _D["jobs"])
 ANTERIOR = _HIST[-2]["date"] if len(_HIST) > 1 else None
-# Empresas cuya oferta se confirmó activa en esta pasada (API pública de Get on Board)
-VERIFICADAS_HOY = {"Healthatom", "Penji", "Hadley Designs", "Envíame", "Commerce Theory", "OOH Publicidad"}
+# Verificación por oferta: open True/False/None y last_check = fecha en que se revisó el aviso
+activa_hoy = lambda j: j.get("open") is True and j.get("last_check") == PASADA
+cerrada = lambda j: j.get("open") is False
 
 MESES = ["", "ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"]
 def fecha_corta(iso):
@@ -52,7 +53,9 @@ def densitometro(pct, fit):
 d = _D
 jobs = d["jobs"]
 nuevas   = [j for j in jobs if j.get("first_seen") == PASADA]
-previas  = [j for j in jobs if j.get("first_seen", "") < PASADA]
+previas_todas = [j for j in jobs if j.get("first_seen", "") < PASADA]
+previas  = [j for j in previas_todas if not cerrada(j)]
+n_cerradas = len(previas_todas) - len(previas)
 nuevas.sort(key=lambda j: (-(j.get("match_pct") or 0)))
 previas.sort(key=lambda j: (-(j.get("match_pct") or 0), j["company"]))
 
@@ -89,7 +92,7 @@ MERCADO = [
     ("Inglés de trabajo", cuenta(["inglés"]),
      "De intermedio a C2 según la oferta. Es lo que separa las remotas bien pagadas del resto."),
     ("HTML y CMS", cuenta(["html", "contentful"]),
-     "Email marketing y gestores de contenido. Aparece solo en las de canal digital de retail."),
+     "Maquetación de emails y landings. Aparece en los cargos de canal digital y de agencia."),
 ]
 MERCADO = [m for m in MERCADO if m[1]]
 MERCADO.sort(key=lambda m: -m[1])
@@ -167,7 +170,7 @@ previas_html = "".join(
       <td class="mono">{e(j["source"])}</td>
       <td class="mono">{fecha_corta(j["first_seen"])}</td>
       <td class="mono num">{(str(j["match_pct"]) + "%") if j.get("match_pct") else "—"}</td>
-      <td>{'<span class="viva">Activa hoy</span>' if j["company"].split(" (")[0] in VERIFICADAS_HOY else '<span class="sinver">Sin verificar</span>'}</td>
+      <td>{'<span class="viva">Activa hoy</span>' if activa_hoy(j) else '<span class="sinver">Sin verificar</span>'}</td>
     </tr>''' for j in previas)
 
 TOKENS_OSCURO = """
@@ -177,7 +180,8 @@ TOKENS_OSCURO = """
 """
 
 altas = len(grupos["high"]); con_renta = sum(1 for j in nuevas if j.get("salary"))
-n_verificadas = sum(1 for j in previas if j["company"].split(" (")[0] in VERIFICADAS_HOY)
+n_verificadas = sum(1 for j in previas if activa_hoy(j))
+n_sinver = len(previas) - n_verificadas
 
 html_out = f'''<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -403,9 +407,9 @@ html_out = f'''<meta charset="utf-8">
 
   <section>
     <p class="eyebrow">Pasada anterior</p>
-    <h2>Las {len(previas)} de pasadas anteriores</h2>
-    <p class="aviso">Estas vienen de pasadas anteriores y no se volvieron a abrir una por una hoy. Las {n_verificadas} de
-      Get on Board sí se confirmaron activas; el resto puede haberse cerrado, así que revisa el enlace antes de preparar carta.</p>
+    <h2>Las {len(previas)} de pasadas anteriores que siguen abiertas</h2>
+    <p class="aviso">Hoy se revisó el aviso de cada oferta registrada antes. {n_cerradas} ya no aceptan postulaciones y salieron
+      de esta lista (en el visor quedan marcadas como cerradas). {n_verificadas} se confirmaron activas{f"; las {n_sinver} restantes no se pudieron verificar, así que revisa el enlace antes de preparar carta" if n_sinver else ""}.</p>
     <div class="tabla-wrap">
       <table>
         <thead><tr><th>Cargo</th><th>Empresa</th><th>Portal</th><th>Vista</th><th>Calce</th><th>Estado</th></tr></thead>
@@ -415,11 +419,11 @@ html_out = f'''<meta charset="utf-8">
   </section>
 
   <footer>
-    <p><b>Cómo se armó.</b> Búsquedas en LinkedIn (Santiago y remoto Chile, avisos de los últimos 7 a 21 días),
-      la API pública de Get on Board en Diseño/UX, Publicidad y Marketing digital, y Chiletrabajos.
+    <p><b>Cómo se armó.</b> Búsquedas en LinkedIn (Santiago y remoto Chile, avisos publicados desde la pasada anterior)
+      y la API pública de Get on Board en Diseño/UX, Publicidad y Marketing digital.
       Cada oferta nueva se abrió completa para leer requisitos, renta y plazos: nada de esto viene de un resumen automático.</p>
-    <p><b>Qué no está.</b> Prácticas profesionales, avisos fuera de la Región Metropolitana, UX/UI de producto
-      y diseño industrial. Tampoco ofertas ya registradas en pasadas anteriores.</p>
+    <p><b>Qué no está.</b> Prácticas profesionales, avisos fuera de la Región Metropolitana, UX/UI de producto,
+      diseño de vestuario y diseño industrial. Tampoco ofertas ya registradas en pasadas anteriores.</p>
     <p><b>¿Quieres filtrar y marcar postulaciones?</b> El visor completo, con las {len(jobs)} ofertas, filtros por
       categoría y modalidad, análisis de perfil y seguimiento de postulaciones, está en
       <a href="https://langab.github.io/visor_trabajo_colo/viewer/">langab.github.io/visor_trabajo_colo/viewer/</a>.</p>
@@ -432,5 +436,6 @@ os.makedirs(os.path.dirname(OUT), exist_ok=True)
 open(OUT, "w", encoding="utf-8").write(html_out)
 open(OUT2, "w", encoding="utf-8").write(html_out)
 print("escrito:", OUT, "y", OUT2, "-", len(html_out), "bytes")
-print("nuevas:", len(nuevas), "| altas:", altas, "| previas:", len(previas), "| con renta:", con_renta)
+print("nuevas:", len(nuevas), "| altas:", altas, "| previas abiertas:", len(previas), "| cerradas:", n_cerradas,
+      "| verificadas:", n_verificadas, "| con renta:", con_renta)
 print("mercado:", [(t, c) for t, c, _ in MERCADO])
