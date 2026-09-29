@@ -52,7 +52,9 @@ def densitometro(pct, fit):
 
 d = _D
 jobs = d["jobs"]
-nuevas   = [j for j in jobs if j.get("first_seen") == PASADA]
+# Las descartadas de la pasada (prácticas, cargos fuera de rubro) se registran para no repetirlas, pero no van al pliego
+descartadas_hoy = [j for j in jobs if j.get("first_seen") == PASADA and j.get("status") == "descartada"]
+nuevas   = [j for j in jobs if j.get("first_seen") == PASADA and j.get("status") != "descartada"]
 previas_todas = [j for j in jobs if j.get("first_seen", "") < PASADA]
 previas  = [j for j in previas_todas if not cerrada(j)]
 n_cerradas = len(previas_todas) - len(previas)
@@ -423,7 +425,8 @@ html_out = f'''<meta charset="utf-8">
       y la API pública de Get on Board en Diseño/UX, Publicidad y Marketing digital.
       Cada oferta nueva se abrió completa para leer requisitos, renta y plazos: nada de esto viene de un resumen automático.</p>
     <p><b>Qué no está.</b> Prácticas profesionales, avisos fuera de la Región Metropolitana, UX/UI de producto,
-      diseño de vestuario y diseño industrial. Tampoco ofertas ya registradas en pasadas anteriores.</p>
+      diseño de vestuario y diseño industrial. Tampoco ofertas ya registradas en pasadas anteriores.
+      {f"Hoy se registraron además {len(descartadas_hoy)} avisos descartados (prácticas que exigen ser estudiante y cargos fuera de rubro) para que no vuelvan a aparecer; se ven en el visor filtrando por descartadas." if descartadas_hoy else ""}</p>
     <p><b>¿Quieres filtrar y marcar postulaciones?</b> El visor completo, con las {len(jobs)} ofertas, filtros por
       categoría y modalidad, análisis de perfil y seguimiento de postulaciones, está en
       <a href="https://langab.github.io/visor_trabajo_colo/viewer/">langab.github.io/visor_trabajo_colo/viewer/</a>.</p>
