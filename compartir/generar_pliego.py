@@ -421,8 +421,9 @@ html_out = f'''<meta charset="utf-8">
   </section>
 
   <footer>
-    <p><b>Cómo se armó.</b> Búsquedas en LinkedIn (Santiago y remoto Chile, avisos publicados desde la pasada anterior), Indeed
-      y la API pública de Get on Board en Diseño/UX, Publicidad y Marketing digital.
+    <p><b>Cómo se armó.</b> Fuentes de esta pasada: {", ".join(sorted({j["source"] for j in nuevas}))}. En LinkedIn se buscan
+      avisos de Santiago y remoto Chile desde la pasada anterior; "muro de Andrea" son publicaciones con ofertas encontradas
+      revisando su feed, y el enlace lleva a la publicación original.
       Cada oferta nueva se abrió completa para leer requisitos, renta y plazos: nada de esto viene de un resumen automático.</p>
     <p><b>Qué no está.</b> Prácticas profesionales, avisos fuera de la Región Metropolitana, UX/UI de producto,
       diseño de vestuario y diseño industrial. Tampoco ofertas ya registradas en pasadas anteriores.
