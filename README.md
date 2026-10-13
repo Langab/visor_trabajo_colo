@@ -3,17 +3,20 @@
 Ofertas laborales de diseño gráfico (branding, packaging, dirección de arte, RRSS e ilustración)
 en Santiago de Chile, recolectadas y curadas con Claude Code.
 
-- **Pliego (portada, para compartir):** https://langab.github.io/visor_trabajo_colo/
-- **Visor interactivo:** https://langab.github.io/visor_trabajo_colo/viewer/
+- **Visor (enlace principal):** https://langab.github.io/visor_trabajo_colo/ → abre `viewer/`
+- **Resumen de la última pasada (pliego):** https://langab.github.io/visor_trabajo_colo/pliego/
 
 ## Estructura
 
-- `index.html` — el pliego de la última pasada: ofertas nuevas ordenadas por calce, con requisitos,
+- `index.html` — redirige al visor.
+- `pliego/index.html` — el resumen de la última pasada: ofertas nuevas ordenadas por calce, con requisitos,
   brechas y orden de postulación. Se genera desde `data/jobs.json`.
-- `viewer/index.html` — visor con filtros, análisis de perfil vs. mercado, histórico y seguimiento
-  de postulaciones. Carga `data/jobs.json` por `fetch`.
+- `viewer/index.html` — visor minimalista y pensado para celular: ofertas agrupadas por opciones (calce alto,
+  medio y bajo), filtros, análisis, histórico y seguimiento de postulaciones. Carga `data/jobs.json` y
+  `logos/index.json` por `fetch`.
+- `logos/` — logos de las marcas descargados de sus sitios (128 px máx.); `index.json` mapea dominio → archivo.
 - `data/jobs.json` — ofertas recolectadas y curadas. Cada pasada agrega una entrada a `history`.
-- `compartir/generar_pliego.py` — genera `index.html` (y una copia en `compartir/pliego.html`)
+- `compartir/generar_pliego.py` — genera `pliego/index.html` (y una copia en `compartir/pliego.html`)
   a partir de `data/jobs.json`.
 
 ## Actualizar

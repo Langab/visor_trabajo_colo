@@ -4,7 +4,7 @@ import json, html, datetime, os
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data", "jobs.json")
-OUT  = os.path.join(BASE, "index.html")
+OUT  = os.path.join(BASE, "pliego", "index.html")
 OUT2 = os.path.join(BASE, "compartir", "pliego.html")
 
 _D = json.load(open(DATA, encoding="utf-8"))
