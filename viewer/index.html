@@ -195,8 +195,8 @@
       <div class="filtro-fila">
         <input type="search" id="q" placeholder="Buscar cargo, empresa o nota…">
         <select id="orden">
+          <option value="match" selected>Mayor calce primero</option>
           <option value="fecha">Más recientes primero</option>
-          <option value="match">Mayor calce primero</option>
           <option value="empresa">Por empresa (A-Z)</option>
         </select>
         <select id="estado">
@@ -342,7 +342,7 @@ const RECOS = [
 ];
 
 let DATA = { jobs: [], updated: null, history: [] };
-let state = { q:"", fit:"all", cat:"all", mod:"all", source:"all", salaryOnly:false, hideClosed:true, estado:"activas", orden:"fecha", view:"ofertas" };
+let state = { q:"", fit:"all", cat:"all", mod:"all", source:"all", salaryOnly:false, hideClosed:true, estado:"activas", orden:"match", view:"ofertas" };
 const applied = new Set(JSON.parse(localStorage.getItem("postuladas") || "[]"));
 const responded = new Set(JSON.parse(localStorage.getItem("respondidas") || "[]"));
 const closed = new Set(JSON.parse(localStorage.getItem("cerradas") || "[]"));
@@ -457,7 +457,7 @@ function render() {
 
   const fechaDe = j => (j.date_posted && j.date_posted !== "desconocida") ? j.date_posted : j.first_seen;
   if (state.orden === "fecha") jobs.sort((a, b) => fechaDe(b).localeCompare(fechaDe(a)) || FIT_ORDER[a.fit] - FIT_ORDER[b.fit]);
-  else if (state.orden === "match") jobs.sort((a, b) => matchDe(b) - matchDe(a));
+  else if (state.orden === "match") jobs.sort((a, b) => matchDe(b) - matchDe(a) || fechaDe(b).localeCompare(fechaDe(a)));
   else jobs.sort((a, b) => a.company.localeCompare(b.company));
 
   const act = DATA.jobs.filter(j => estadoDe(j) !== "descartada" && !closed.has(j.id));
