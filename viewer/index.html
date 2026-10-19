@@ -344,7 +344,7 @@ async function load() {
     const [r, rl] = await Promise.all([fetch("../data/jobs.json?v=" + Date.now()), fetch("../logos/index.json").catch(() => null)]);
     DATA = await r.json();
     if (rl && rl.ok) LOGOS = await rl.json();
-    DATA.jobs.forEach(j => { if (j.open === false) closed.add(j.id); });
+    DATA.jobs.forEach(j => { if (j.open === false) closed.add(j.id); if (j.response_date) { applied.add(j.id); responded.add(j.id); } });
   } catch (e) { $("list").innerHTML = '<div class="empty">No se pudieron cargar las ofertas.</div>'; return; }
   const d = new Date(DATA.updated);
   $("updated").textContent = "Actualizado " + d.toLocaleDateString("es-CL", { day:"numeric", month:"short" });
@@ -504,7 +504,7 @@ function renderSeguimiento() {
   $("sg-list").innerHTML = post.length ? post.map(j => {
     const r = responded.has(j.id), d = diasDe(j);
     return `<div class="line-item"><div class="body"><a href="${esc(j.url)}" target="_blank" rel="noopener">${esc(j.title)}</a>
-      <div class="sub">${esc(j.company)}${d != null ? " · " + (d <= 0 ? "postulada hoy" : d === 1 ? "hace 1 día" : `hace ${d} días`) : ""}</div></div>
+      <div class="sub">${esc(j.company)}${d != null ? " · " + (d <= 0 ? "postulada hoy" : d === 1 ? "hace 1 día" : `hace ${d} días`) : ""}${j.response_note ? " · " + esc(j.response_note) : ""}</div></div>
       <button class="btn ${r ? "on" : ""}" data-act="resp" data-id="${esc(j.id)}">${r ? ICON_CHECK + " Respondió" : "Marcar respuesta"}</button></div>`;
   }).join("") : '<div class="empty">Aún no hay postulaciones marcadas. Usa "Marcar postulada" en cada oferta.</div>';
 }
