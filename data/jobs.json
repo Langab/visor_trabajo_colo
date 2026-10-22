@@ -509,14 +509,14 @@
       "first_seen": "2026-08-25",
       "date_posted": "2026-08-06",
       "fit": "high",
-      "status": "evaluada",
+      "status": "postulada",
       "salary": "",
-      "notes": "La oferta que más se parece a lo que hiciste en Imanix: packaging como core del cargo, artes finales en Illustrator e InDesign, normativas por país, envío de originales a proveedores en China y seguimiento de producción. Piden desde 3 años en packaging/desarrollo de marcas en retail o consumo masivo (tienes 4+). Contrato indefinido y fecha esperada de contratación 31/08: postula ya.",
+      "notes": "La oferta que más se parece a lo que hiciste en Imanix: packaging como core del cargo, artes finales en Illustrator e InDesign, normativas por país, envío de originales a proveedores en China y seguimiento de producción. Piden desde 3 años en packaging/desarrollo de marcas en retail o consumo masivo (tienes 4+). Contrato indefinido y fecha esperada de contratación 31/08: postula ya. Al intentar postular el 22-10, el portal de Cencosud indicó que Andrea ya había enviado una solicitud para esta vacante.",
       "category": "packaging",
       "source": "LinkedIn",
       "modality": "presencial",
       "deadline": "2026-08-31",
-      "applied_date": "",
+      "applied_date": "2026-10-22",
       "match_pct": 92,
       "gaps": [
         "IA generativa aplicada al diseño (la piden explícitamente)",
@@ -2937,14 +2937,14 @@
       "first_seen": "2026-10-13",
       "date_posted": "2026-08-27",
       "fit": "medium",
-      "status": "nueva",
+      "status": "postulada",
       "salary": "",
       "notes": "Empresa de salud que busca diseñador/a para piezas gráficas, packaging, material POP, catálogos y fichas técnicas. No exige experiencia, así que es probable que sea un cargo junior. Cierra en 13 días.",
       "category": "packaging",
       "source": "Trabajando.com",
       "modality": "presencial",
       "deadline": "2026-10-26",
-      "applied_date": "",
+      "applied_date": "2026-10-22",
       "match_pct": 72,
       "gaps": [
         "Cargo de entrada: renta probablemente baja",
@@ -2987,14 +2987,14 @@
       "first_seen": "2026-10-13",
       "date_posted": "2026-08-26",
       "fit": "medium",
-      "status": "nueva",
+      "status": "postulada",
       "salary": "",
       "notes": "Marca de denim que pide piezas para RRSS, web y campañas, catálogos para la venta mayorista, edición de fotos de producto y publicación en redes. Calza con su experiencia en e-commerce y catálogos.",
       "category": "digital-rrss",
       "source": "Trabajando.com",
       "modality": "presencial",
       "deadline": "2026-10-25",
-      "applied_date": "",
+      "applied_date": "2026-10-22",
       "match_pct": 66,
       "gaps": [
         "Gestión y publicación de RRSS"
@@ -3075,7 +3075,7 @@
         "Supervisión de tiendas"
       ],
       "last_check": "2026-10-22",
-      "open": true
+      "open": false
     },
     {
       "id": "https://www.trabajando.cl/trabajo-empleo/dise%C3%B1ador%20gr%C3%A1fico/trabajo/6123750-disenador-a-grafico-a",
@@ -4675,7 +4675,7 @@
         "Rubro construcción/industrial (deseable)"
       ],
       "last_check": "2026-10-22",
-      "open": true
+      "open": false
     },
     {
       "id": "https://www.linkedin.com/jobs/view/4477339086",
