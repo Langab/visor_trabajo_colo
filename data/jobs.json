@@ -5429,6 +5429,57 @@
         "Materiales educativos e institucionales (manuales, infografías)",
         "Contrato de consultoría, no empleo"
       ]
+    },
+    {
+      "salary": "$1.344.000 – $1.680.000 mensuales",
+      "deadline": "",
+      "applied_date": "",
+      "last_check": "2026-10-22",
+      "open": true,
+      "status": "nueva",
+      "first_seen": "2026-10-22",
+      "id": "https://www.linkedin.com/jobs/view/4462917284",
+      "url": "https://www.linkedin.com/jobs/view/4462917284",
+      "title": "Jr. Graphic Designer (marcas infantiles de calzado)",
+      "company": "Vida Shoes International",
+      "location": "Gran Santiago",
+      "date_posted": "2026-09-29",
+      "fit": "medium",
+      "category": "retail-pop",
+      "source": "LinkedIn",
+      "modality": "presencial",
+      "match_pct": 70,
+      "notes": "Diseño para marcas infantiles de calzado (Stride Rite, Saucony, Merrell, Carter’s, OshKosh y otras): homepage y email, banners y landings, catálogos y line sheets mayoristas, displays para tiendas, packaging, presentaciones y avisos, con archivos listos para impresión y digital. Calza con su experiencia en retail, e-commerce, catálogos y packaging, y publica renta. El ojo: piden inglés fluido, trabajar en horario de Nueva York (EST) y Figma como requisito. Es una nueva publicación; la versión anterior del visor estaba cerrada. Apareció en su muro vía la red de exalumnos de Diseño UV.",
+      "gaps": [
+        "Inglés fluido (tiene B1)",
+        "Horario de Nueva York (EST)",
+        "Figma (requisito)"
+      ]
+    },
+    {
+      "salary": "",
+      "deadline": "",
+      "applied_date": "",
+      "last_check": "2026-10-22",
+      "open": true,
+      "status": "nueva",
+      "first_seen": "2026-10-22",
+      "id": "https://www.linkedin.com/feed/update/urn:li:share:7509308715620261888/",
+      "url": "https://www.linkedin.com/feed/update/urn:li:share:7509308715620261888/",
+      "title": "Diseñador/a de piezas digitales y audiovisuales – Festival Teatro a Mil 2027",
+      "company": "Fundación Teatro a Mil",
+      "location": "Santiago",
+      "date_posted": "2026-09-25",
+      "fit": "low",
+      "category": "motion",
+      "source": "LinkedIn · muro de Andrea",
+      "modality": "no_especificado",
+      "match_pct": 50,
+      "notes": "La Fundación Teatro a Mil busca diseñador/a para producir piezas digitales y audiovisuales del Festival 2027. Las bases están en un formulario de Google enlazado en la publicación (https://forms.gle/Es24uzBzBHQ1ufg3A). Se publicó el 25 de septiembre, así que puede estar cerrada.",
+      "gaps": [
+        "Piezas audiovisuales y motion",
+        "Plazo no indicado; puede estar cerrada"
+      ]
     }
   ],
   "history": [
@@ -5488,9 +5539,9 @@
     },
     {
       "date": "2026-10-22",
-      "new": 4,
+      "new": 6,
       "new_high": 0,
-      "cumulative": 221
+      "cumulative": 223
     }
   ]
 }
