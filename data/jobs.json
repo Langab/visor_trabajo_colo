@@ -5252,7 +5252,7 @@
       "source": "LinkedIn",
       "modality": "no_especificado",
       "match_pct": 85,
-      "notes": "Nueva publicación de la búsqueda de Global Talent para un retail nacional: conceptos de branding e identidad para productos y líneas, packaging desde la idea hasta los artes finales, mockups y aplicaciones de marca, y uso de IA generativa para explorar y generar imágenes. Trabaja con Marketing, Producto y Comercial. Es su perfil completo, ahora con la IA que ya figura en su CV. Contrato por obra. La versión anterior pedía RUT en el portal de Global Talent; conviene revisar si esta permite postular por LinkedIn.",
+      "notes": "Nueva publicación de la búsqueda de Global Talent para un retail nacional: conceptos de branding e identidad para productos y líneas, packaging desde la idea hasta los artes finales, mockups y aplicaciones de marca, y uso de IA generativa para explorar y generar imágenes. Trabaja con Marketing, Producto y Comercial. Es su perfil completo, ahora con la IA que ya figura en su CV. Contrato por obra. La versión anterior pedía RUT en el portal de Global Talent; conviene revisar si esta permite postular por LinkedIn. El 10-11 se postuló a la republicación del cargo (4487151664).",
       "gaps": [
         "Contrato por obra, no indefinido"
       ]
@@ -6804,10 +6804,10 @@
     {
       "salary": "",
       "deadline": "",
-      "applied_date": "",
+      "applied_date": "2026-11-10",
       "last_check": "2026-11-10",
       "open": true,
-      "status": "nueva",
+      "status": "postulada",
       "first_seen": "2026-11-10",
       "modality": "no_especificado",
       "gaps": [],
@@ -6826,10 +6826,10 @@
     {
       "salary": "$1.000.000 base",
       "deadline": "",
-      "applied_date": "",
+      "applied_date": "2026-11-10",
       "last_check": "2026-11-10",
       "open": true,
-      "status": "nueva",
+      "status": "postulada",
       "first_seen": "2026-11-10",
       "modality": "presencial",
       "gaps": [
@@ -6949,24 +6949,24 @@
     },
     {
       "salary": "",
-      "deadline": "",
+      "deadline": "2026-11-02",
       "applied_date": "",
       "last_check": "2026-11-10",
-      "open": true,
+      "open": false,
       "status": "nueva",
       "first_seen": "2026-11-10",
-      "modality": "no_especificado",
+      "modality": "presencial",
       "gaps": [],
       "source": "LinkedIn · muro de Andrea",
       "date_posted": "2026-11-02",
       "url": "https://www.linkedin.com/feed/update/urn:li:share:7521566258648064001/",
       "title": "Diseñador/a Gráfico/a Junior (campañas y eventos)",
       "company": "Florida Parque Comercial",
-      "location": "No indicada (Florida Parque Comercial)",
-      "fit": "medium",
-      "match_pct": 65,
+      "location": "Medellín, Colombia (Florida Parque Comercial)",
+      "fit": "low",
+      "match_pct": 30,
       "category": "retail-pop",
-      "notes": "Publicado en el muro. Piezas para campañas y eventos del parque comercial, artes finales y coordinación con imprentas. La publicación no indica ubicación, modalidad ni plazo; revisar el post para el canal de postulación.",
+      "notes": "Publicado en el muro. La imagen del post indica cierre el 02-11-2026 y CV a mariana.velez@floridapc.co: es el mall Florida Parque Comercial de Medellín (Colombia), presencial. No se postuló.",
       "id": "https://www.linkedin.com/feed/update/urn:li:share:7521566258648064001/"
     },
     {
