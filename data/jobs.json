@@ -7353,6 +7353,79 @@
       "last_check": "2026-11-18",
       "open": true,
       "source": "LinkedIn"
+    },
+    {
+      "id": "https://www.trabajando.cl/trabajo/6149575-disenador-a-grafico-region-metropolitana",
+      "title": "Diseñador/a Gráfico/a (Marketing y Comunicaciones)",
+      "company": "Empresa confidencial (San Bernardo)",
+      "location": "San Bernardo, Santiago",
+      "date_posted": "2026-11-13",
+      "fit": "high",
+      "match_pct": 75,
+      "category": "retail-pop",
+      "modality": "no_especificado",
+      "gaps": [
+        "gestión de redes sociales"
+      ],
+      "deadline": "2027-01-12",
+      "notes": "Catálogos, flyers, empaques, fichas técnicas, stands, merchandising, piezas web, RRSS y POP; también administra las redes de la empresa. Jornada completa. Finaliza en 55 días.",
+      "url": "https://www.trabajando.cl/trabajo/6149575-disenador-a-grafico-region-metropolitana",
+      "first_seen": "2026-11-18",
+      "status": "nueva",
+      "salary": "",
+      "applied_date": "",
+      "last_check": "2026-11-18",
+      "open": true,
+      "source": "Trabajando.com"
+    },
+    {
+      "id": "https://www.trabajando.cl/trabajo/6149431-disenador-a-grafico-a-junior-email-marketing-y-ecommerce",
+      "title": "Diseñador/a Gráfico/a Junior – Email Marketing y Ecommerce",
+      "company": "Sleeve Tech SpA",
+      "location": "Pedro Aguirre Cerda, Santiago",
+      "date_posted": "2026-11-12",
+      "fit": "medium",
+      "match_pct": 55,
+      "category": "digital-rrss",
+      "modality": "no_especificado",
+      "gaps": [
+        "email marketing y Klaviyo"
+      ],
+      "deadline": "2026-12-12",
+      "notes": "Correos de campañas y flujos en Klaviyo, piezas para RRSS, banners y fichas de producto para marketplaces. Perfil de 0 a 2 años de experiencia. Finaliza en 24 días.",
+      "url": "https://www.trabajando.cl/trabajo/6149431-disenador-a-grafico-a-junior-email-marketing-y-ecommerce",
+      "first_seen": "2026-11-18",
+      "status": "nueva",
+      "salary": "",
+      "applied_date": "",
+      "last_check": "2026-11-18",
+      "open": true,
+      "source": "Trabajando.com"
+    },
+    {
+      "id": "https://www.trabajando.cl/trabajo/6149255-disenador-grafico",
+      "title": "Diseñador/a Gráfico/a (empresa del sector productivo)",
+      "company": "Empresa confidencial (Quilicura)",
+      "location": "Quilicura, Santiago",
+      "date_posted": "2026-11-12",
+      "fit": "medium",
+      "match_pct": 60,
+      "category": "branding",
+      "modality": "presencial",
+      "gaps": [
+        "administración de redes sociales",
+        "mantención del sitio web"
+      ],
+      "deadline": "2026-12-12",
+      "notes": "Identidad corporativa, RRSS, presentaciones, comunicaciones internas y manual de marca. 100 % presencial, con buses de acercamiento y casino. Finaliza en 24 días.",
+      "url": "https://www.trabajando.cl/trabajo/6149255-disenador-grafico",
+      "first_seen": "2026-11-18",
+      "status": "nueva",
+      "salary": "",
+      "applied_date": "",
+      "last_check": "2026-11-18",
+      "open": true,
+      "source": "Trabajando.com"
     }
   ],
   "history": [
@@ -7460,9 +7533,9 @@
     },
     {
       "date": "2026-11-18",
-      "new": 6,
-      "new_high": 1,
-      "cumulative": 299
+      "new": 9,
+      "new_high": 2,
+      "cumulative": 302
     }
   ]
 }
